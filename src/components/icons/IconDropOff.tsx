@@ -1,5 +1,5 @@
 import { cx } from "class-variance-authority"
-import { SVGAttributes, SVGProps } from "react"
+import { SVGAttributes } from "react"
 
 interface Props extends SVGAttributes<SVGSVGElement> {
   pathClassName?: string
