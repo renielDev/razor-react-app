@@ -12,6 +12,9 @@ export default {
           "base": "#1287FD"
         },
         "colorbg": "#EFF3F7"
+      },
+      borderWidth: {
+        "1": "1px"
       }
     },
   },
