@@ -57,8 +57,8 @@ function App() {
           </ul>
         </div>
 
-        <div className="flex-grow w-full p-4 bg-colorbg">
-          <div className='p-4 mb-4 bg-white rounded shadow-sm'>
+        <div className="flex flex-col flex-grow w-full gap-4 p-4 bg-colorbg">
+          <div className='p-4 bg-white rounded'>
             <h4 className='mb-4 text-base font-semibold'>General</h4>
             <div className="flex gap-4">
               <div className='flex-1'>
@@ -83,7 +83,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='p-4 mb-4 bg-white rounded shadow-sm'>
+          <div className='p-4 bg-white rounded'>
             <h4 className='mb-4 text-base font-semibold'>Select Logistic Type</h4>
             <div className="grid grid-cols-3 gap-4">
               <div className='flex flex-col items-center justify-center p-3 text-white rounded border-1 border-primary-base bg-primary-base'>
@@ -91,12 +91,55 @@ function App() {
                 <label htmlFor="">Our Trucking</label>
               </div>
               <div className='flex flex-col items-center justify-center p-3 border-gray-200 rounded border-1'>
-                <IconTruckCarrier className='h-4 mb-3' pathClassName='fill-white fill-gray-400' />
+                <IconTruckCarrier className='h-4 mb-3' pathClassName='fill-gray-400' />
                 <label htmlFor="">Common Carrier</label>
               </div>
               <div className='flex flex-col items-center justify-center p-3 border-gray-200 rounded border-1 '>
-                <IconDropOff className='h-4 mb-3' pathClassName='fill-white fill-gray-400' />
+                <IconDropOff className='h-4 mb-3' pathClassName='fill-gray-400' />
                 <label htmlFor="">Client Drop Off</label>
+              </div>
+            </div>
+          </div>
+          <div className='p-4 bg-white rounded'>
+            <h4 className='mb-4 text-base font-semibold'>Notes</h4>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="">
+                <div className="border-gray-200 rounded border-1">
+                  <div className="px-5 py-3 border-gray-200 border-b-1 submenu">
+                    <ul className='flex flex-1 gap-8'>
+                      <li className='relative text-sm font-medium after:bg-primary-base after:w-[100%] after:h-1 after:absolute after:left-0 after:bottom-[-13px]'>Work Instructions</li>
+                      <li className='text-sm'>Internal Notes</li>
+                      <li className='text-sm'>Field Notes</li>
+                    </ul>
+                  </div>
+                  <div className="px-4 py-2">
+                    <label className='text-sm'>Preselected Text</label>
+                    <select name="" id="" className='w-full px-1 py-1 mb-2 text-sm border-gray-200 rounded border-1'>
+                      <option value="">Select</option>
+                      <option value="">Select</option>
+                      <option value="">Select</option>
+                      <option value="">Select</option>
+                    </select>
+                    <textarea name="" id="" rows={4} className='w-full px-2 py-1 text-sm border-gray-200 rounded-sm border-1'></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='p-4 bg-white rounded'>
+            <h4 className='mb-4 text-base font-semibold'>Files and Images</h4>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="">
+                <div className="border-gray-200 border-dashed rounded border-1">
+                  <div className="px-5 py-3 border-gray-200 border-b-1 submenu">
+                    <ul className='grid grid-cols-2 text-center'>
+                      <li className='relative text-sm font-medium after:bg-primary-base after:w-[100%] after:h-1 after:absolute after:left-0 after:bottom-[-13px]'>Files</li>
+                      <li className='text-sm'>Images</li>
+                    </ul>
+                  </div>
+                  <div className="px-4 py-2">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
