@@ -2,6 +2,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 import { cx } from 'class-variance-authority';
 import { useState } from 'react';
 import { cn } from '../../shared/utils';
+import './DropdownMenu.scss';
 
 interface OptionItem {
   key: string;
@@ -28,7 +29,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options, placeholder, searc
 
     return false
   });
-  const _dropdownOptionsClassname = cn('absolute w-full text-sm bg-white border-gray-200 rounded-md shadow-lg border-1 top-[2rem]', {
+  const _dropdownOptionsClassname = cn('dropdownmenu', {
     'hidden': !optionOpen,
   })
 
@@ -40,7 +41,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options, placeholder, searc
   }
 
   const listOptionClass = (option: OptionValue) => {
-    return cx('px-4 py-1 transition-colors duration-300 hover:bg-gray-100', {
+    return cx('dropdownmenu--item', {
       'bg-gray-100': selected(option),
     })
   }

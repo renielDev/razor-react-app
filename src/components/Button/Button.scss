@@ -1,4 +1,4 @@
 .base {
-  @apply transition-opacity duration-300 hover:opacity-70;
+  @apply text-sm transition-opacity duration-300 hover:opacity-70;
   @apply flex items-center px-3 py-1 rounded shadow-sm;
 }
