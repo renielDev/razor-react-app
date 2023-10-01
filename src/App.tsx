@@ -1,7 +1,7 @@
 import { ChevronDownIcon, ChevronLeftIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 import './App.scss'
-import Button from './components/Button/Button'
+import Button from './components/button/Button'
 import SectionContainer from './components/SectionContainer'
 import BodyContainer from './components/body-container/BodyContainer'
 import DropdownMenu from './components/dropdown/DropdownMenu'
@@ -188,6 +188,14 @@ function App() {
               </div>
             </div>
           </SectionContainer>
+
+          <SectionContainer>
+            <h4 className='mb-4 text-base font-semibold'>Tags</h4>
+            <div className="flex gap-4">
+              <Textarea placeholder='Enter tags' className='flex-1' />
+            </div>
+          </SectionContainer>
+
           <SectionContainer>
             <h4 className='mb-4 text-base font-semibold'>Estimated Equipment</h4>
             <div className="flex gap-4">
@@ -203,6 +211,7 @@ function App() {
               </div>
             </div>
           </SectionContainer>
+
           <SectionContainer>
             <h4 className='mb-4 text-base font-semibold'>References</h4>
             <div className="flex gap-4">
