@@ -1,7 +1,7 @@
 import { ChevronDownIcon, ChevronLeftIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 import './App.scss'
-import Button from './components/buttons/Button'
+import Button from './components/button/Button'
 import SectionContainer from './components/SectionContainer'
 import BodyContainer from './components/body-container/BodyContainer'
 import DropdownMenu from './components/dropdown/DropdownMenu'
